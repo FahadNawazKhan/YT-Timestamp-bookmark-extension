@@ -1,21 +1,32 @@
 {
-    "manifest_version" : 3,
-    "name":"YT Timestamp Bookmarks",
-    "version":"1.0.0",
-    "description":"Save and revisit YouTube timestamps.",
-    "permissions":[
-        "storage",
-        "tabs"
+    "manifest_version": 3,
+    "name": "YT Timestamp Bookmarks",
+    "version": "1.0.0",
+    "description": "Save and revisit YouTube timestamps.",
+    "permissions": [
+        "storage"
     ],
-    "action":{
-        "default_popup":"popup.html"
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "YTMark.png",
+            "32": "YTMark.png",
+            "48": "YTMark.png",
+            "128": "YTMark.png"
+        }
     },
-    "content_scripts":[
+    "icons": {
+        "16": "YTMark.png",
+        "32": "YTMark.png",
+        "48": "YTMark.png",
+        "128": "YTMark.png"
+    },
+    "content_scripts": [
         {
-            "matches":[
+            "matches": [
                 "https://www.youtube.com/*"
             ],
-            "js":[
+            "js": [
                 "content.js"
             ]
         }
