@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 320px;
+    margin: 0;
+    padding: 16px;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background: #0f0f0f;
+    color: #f5f5f5;
+}
+
+/* Header */
+
+h1 {
+    margin: 0 0 14px;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+/* Save button */
+
+#saveTimestamp {
+    width: 100%;
+    height: 38px;
+
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+
+    background: #181818;
+    color: #fff;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease;
+}
+
+#saveTimestamp:hover {
+    background: #222;
+    border-color: #3a3a3a;
+}
+
+#saveTimestamp:active {
+    background: #292929;
+}
+
+/* Bookmark list */
+
+#bookmarks {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    margin-top: 14px;
+}
+
+/* Individual bookmark */
+
+#bookmarks>div {
+    padding: 10px 11px;
+
+    border: 1px solid #222;
+    border-radius: 7px;
+
+    background: #151515;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+#bookmarks>div:hover {
+    background: #1c1c1c;
+    border-color: #303030;
+
+    transform: translateY(-1px);
+}
+
+/* Timestamp */
+
+#bookmarks strong {
+    display: inline-block;
+
+    margin-bottom: 3px;
+
+    color: #ff4d6d;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Video title */
+
+#bookmarks>div>div:last-child {
+    overflow: hidden;
+
+    color: #a8a8a8;
+
+    font-size: 12px;
+    line-height: 1.4;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
